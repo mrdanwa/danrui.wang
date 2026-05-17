@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Danrui Wang — Product Engineer</title>
+        <meta name="description" content="Danrui Wang — Product Engineer">
+        <meta name="author" content="Danrui Wang">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <!-- Stars -->
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <!-- Background Orbs -->
+        <div class="orb orb--primary"></div>
+        <div class="orb orb--secondary"></div>
+        <div class="orb-vignette"></div>
+        <!-- Mobile Header -->
+        <header class="mobile-header glass">
+            <button class="mobile-header__menu-btn" id="menuBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+            <span class="mobile-header__title">Danrui Wang</span>
+            <div style="width:40px"></div>
+        </header>
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        <aside class="sidebar-mobile glass" id="sidebarMobile">
+            <button class="sidebar-mobile__close glass-card" id="closeSidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+            <div class="sidebar__avatar-wrap">
+                <img src="images/profile.png" alt="Profile" class="sidebar__avatar">
+            </div>
+            <div>
+                <h1 class="sidebar__name">Danrui Wang</h1>
+                <p class="sidebar__title">Product Engineer</p>
+            </div>
+            <div class="sidebar__socials">
+                <a href="https://www.linkedin.com/in/danrui-wang/" target="_blank" class="sidebar__social-btn glass-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <a href="https://github.com/mrdanwa" target="_blank" class="sidebar__social-btn glass-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+            </div>
+            <div class="sidebar__info">
+                <div class="sidebar__info-row">
+                    <span class="sidebar__info-label">Role</span>
+                    <span class="sidebar__info-value">Product Engineer</span>
+                </div>
+                <div class="sidebar__info-row">
+                    <span class="sidebar__info-label">Company</span>
+                    <span class="sidebar__info-value">Invopop (YC W23)</span>
+                </div>
+                <div class="sidebar__info-row">
+                    <span class="sidebar__info-label">Location</span>
+                    <span class="sidebar__info-value">Madrid, Spain</span>
+                </div>
+                <div class="sidebar__info-row">
+                    <span class="sidebar__info-label">Education</span>
+                    <span class="sidebar__info-value">CS & BBA · UPM</span>
+                </div>
+            </div>
+        </aside>
+        <!-- App Wrapper -->
+        <div class="app-wrapper">
+            <div class="app-layout">
+                <!-- ===== Desktop Sidebar ===== -->
+                <aside class="sidebar glass">
+                    <div class="sidebar__avatar-wrap">
+                        <img src="images/profile.png" alt="Danrui Wang" class="sidebar__avatar">
+                    </div>
+                    <div>
+                        <h1 class="sidebar__name">Danrui Wang</h1>
+                        <p class="sidebar__title">Product Engineer</p>
+                    </div>
+                    <div class="sidebar__socials">
+                        <a href="https://www.linkedin.com/in/danrui-wang/" target="_blank" class="sidebar__social-btn glass-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/mrdanwa" target="_blank" class="sidebar__social-btn glass-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="sidebar__info">
+                        <div class="sidebar__info-row">
+                            <span class="sidebar__info-label">Role</span>
+                            <span class="sidebar__info-value">Product Engineer</span>
+                        </div>
+                        <div class="sidebar__info-row">
+                            <span class="sidebar__info-label">Company</span>
+                            <span class="sidebar__info-value">Invopop (YC W23)</span>
+                        </div>
+                        <div class="sidebar__info-row">
+                            <span class="sidebar__info-label">Location</span>
+                            <span class="sidebar__info-value">Madrid, Spain</span>
+                        </div>
+                        <div class="sidebar__info-row">
+                            <span class="sidebar__info-label">Education</span>
+                            <span class="sidebar__info-value">CS & BBA · UPM</span>
+                        </div>
+                    </div>
+                </aside>
+                <!-- ===== Main Content ===== -->
+                <main class="main-content glass" id="mainContent">
+                    <!-- HOME -->
+                    <section class="section hero" data-section="home">
+                        <p class="hero__label">Build. Innovate. Impact.</p>
+                        <h2 class="hero__heading">Building products <br>
+                            <span class="hero__gradient">people love</span>.
+                        </h2>
+                        <p class="hero__desc">Probably working on something right now.</p>
+                    </section>
+                    <!-- PLAY -->
+                    <section class="section" data-section="play">
+                        <h2 class="section__heading">
+                            <span class="section__icon">⊘</span> Just for Fun
+                        </h2>
+                        <div class="play__stats">
+                            <span id="playMoves">Moves: 0</span>
+                        </div>
+                        <div class="play__grid" id="playGrid"></div>
+                        <button class="play__restart" id="playRestart">Restart</button>
+                        <p class="play__rules">Pair up adjacent cells. If they match, both clear. <br>If not, the second one merges. Clear the grid!</p>
+                    </section>
+                    <!-- ABOUT -->
+                    <section class="section" data-section="about">
+                        <h2 class="section__heading">
+                            <span class="section__icon">◈</span> About Me
+                        </h2>
+                        <p class="about__text">Product Engineer at Invopop (YC W23) with a dual degree in Computer Science and Business Administration. Passionate about entrepreneurship, AI and building products that actually matter.</p>
+                        <div class="about__info-grid">
+                            <div class="about__info-item">
+                                <span class="about__info-label">Education</span>
+                                <span class="about__info-value">CS & BBA · UPM</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-label">Location</span>
+                                <span class="about__info-value">Madrid, Spain</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-label">Company</span>
+                                <span class="about__info-value">Invopop (YC W23)</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-label">Email</span>
+                                <span class="about__info-value">wdanrui@gmail.com</span>
+                            </div>
+                        </div>
+                        <h3 class="section__heading" style="font-size:1.25rem">Interests</h3>
+                        <div class="services-grid">
+                            <div class="service-card glass-card">
+                                <div class="service-card__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><circle cx="11" cy="11" r="2" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-card__title">Product Thinking</h4>
+                                <p class="service-card__desc">Enjoy turning ideas into real products, from first principles to launch.</p>
+                            </div>
+                            <div class="service-card glass-card">
+                                <div class="service-card__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-card__title">Emerging tech</h4>
+                                <p class="service-card__desc">Curious about what's next, from new tools and stacks to what's actually worth adopting.</p>
+                            </div>
+                            <div class="service-card glass-card">
+                                <div class="service-card__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-card__title">Entrepreneurship</h4>
+                                <p class="service-card__desc">Interested in startups and what it takes to go from zero to one.</p>
+                            </div>
+                            <div class="service-card glass-card">
+                                <div class="service-card__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                    </svg>
+                                </div>
+                                <h4 class="service-card__title">Travel</h4>
+                                <p class="service-card__desc">Every place teaches something new, especially exploring different cultures and perspectives.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- RESUME -->
+                    <section class="section" data-section="resume">
+                        <h2 class="section__heading">
+                            <span class="section__icon" style="color:var(--primary);opacity:0.7">⎔</span> Resume
+                        </h2>
+                        <h3 class="resume__sub-heading">Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot--active"></div>
+                                <time class="timeline-item__period timeline-item__period--active">Mar 2026 — Present</time>
+                                <h4 class="timeline-item__title">Product Engineer <span class="timeline-item__company">· Invopop (YC W23)</span></h4>
+                                <p class="timeline-item__desc">Building product at a YC-backed e-invoicing startup.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot--inactive"></div>
+                                <time class="timeline-item__period timeline-item__period--inactive">Feb 2025 — Mar 2026</time>
+                                <h4 class="timeline-item__title">Lead Developer <span class="timeline-item__company">· Caret Capital</span></h4>
+                                <p class="timeline-item__desc">Lead full-stack developer for a real estate investment firm.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot--inactive"></div>
+                                <time class="timeline-item__period timeline-item__period--inactive">Sep 2024 — Feb 2025</time>
+                                <h4 class="timeline-item__title">IT Architecture Intern <span class="timeline-item__company">· Accenture</span></h4>
+                                <p class="timeline-item__desc">Architectural design of banking and medical applications.</p>
+                            </div>
+                        </div>
+                        <h3 class="resume__sub-heading">Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot timeline-dot--inactive"></div>
+                                <time class="timeline-item__period timeline-item__period--inactive">2020 — 2025</time>
+                                <h4 class="timeline-item__title">B.Eng. Computer Science & BBA <span class="timeline-item__company">· Universidad Politécnica de Madrid</span></h4>
+                                <p class="timeline-item__desc">Specialization in IT Management and Business Administration.</p>
+                            </div>
+                        </div>
+                        <h3 class="resume__sub-heading">Skills</h3>
+                        <div class="skills-grid">
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">Go</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">Python / Django</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">React / React Native</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">Java</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">JavaScript / TypeScript</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="skill__header">
+                                    <span class="skill__name">Cloud & DevOps</span>
+                                </div>
+                                <div class="skill__bar">
+                                    <div class="skill__fill" data-level="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Projects -->
+                    <section class="section" data-section="projects">
+                        <h2 class="section__heading">
+                            <span class="section__icon">⊞</span> Projects
+                        </h2>
+                        <div class="projects-grid">
+                            <a href="https://hereditas.dev" target="_blank" rel="noopener noreferrer" class="projects-card glass-card" style="text-decoration:none;color:inherit">
+                                <div class="projects-card__img-wrap">
+                                    <img src="images/hereditas.png" alt="Hereditas" class="projects-card__img">
+                                    <div class="projects-card__overlay">
+                                        <span class="projects-card__link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15 3 21 3 21 9" />
+                                                <line x1="10" y1="14" x2="21" y2="3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="projects-card__body">
+                                    <div class="projects-card__title">Hereditas - Snap into Heritage</div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </main>
+                <!-- ===== Right Side Navigation (Desktop) ===== -->
+                <nav class="side-nav glass">
+                    <button class="side-nav__btn active" data-nav="home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        <span class="side-nav__tooltip">Home</span>
+                    </button>
+                    <button class="side-nav__btn" data-nav="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="6" y1="11" x2="10" y2="11" />
+                            <line x1="8" y1="9" x2="8" y2="13" />
+                            <line x1="15" y1="12" x2="15.01" y2="12" />
+                            <line x1="18" y1="10" x2="18.01" y2="10" />
+                            <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.544-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+                        </svg>
+                        <span class="side-nav__tooltip">Play</span>
+                    </button>
+                    <button class="side-nav__btn" data-nav="about">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        <span class="side-nav__tooltip">About</span>
+                    </button>
+                    <button class="side-nav__btn" data-nav="resume">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                        </svg>
+                        <span class="side-nav__tooltip">Resume</span>
+                    </button>
+                    <button class="side-nav__btn" data-nav="projects">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                        <span class="side-nav__tooltip">Projects</span>
+                    </button>
+                </nav>
+            </div>
+            <!-- .app-layout -->
+        </div>
+        <!-- .app-wrapper -->
+        <!-- Bottom Navigation (Mobile) -->
+        <nav class="bottom-nav glass">
+            <div class="bottom-nav__inner">
+                <button class="bottom-nav__btn active" data-nav="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>Home </button>
+                <button class="bottom-nav__btn" data-nav="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="6" y1="11" x2="10" y2="11" />
+                        <line x1="8" y1="9" x2="8" y2="13" />
+                        <line x1="15" y1="12" x2="15.01" y2="12" />
+                        <line x1="18" y1="10" x2="18.01" y2="10" />
+                        <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.544-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+                    </svg>Play</button>
+                <button class="bottom-nav__btn" data-nav="about">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>About </button>
+                <button class="bottom-nav__btn" data-nav="resume">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>Resume </button>
+                <button class="bottom-nav__btn" data-nav="projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7" />
+                        <rect x="14" y="3" width="7" height="7" />
+                        <rect x="14" y="14" width="7" height="7" />
+                        <rect x="3" y="14" width="7" height="7" />
+                    </svg>Projects </button>
+            </div>
+        </nav>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>
